@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* Alt-Z ->adjusts code to fit screen/window */
+/* this code enables one to import custom fonts with ease,witha  custom name. */
+@font-face{
+    /* creates a font witht the name you give it below. */
+    font-family: YoungSerif;
+    /* code below takes url of downloaded font */
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-family: Outfit;
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root{
+    --White:hsl(0, 0%, 100%);
+
+    --Stone100: rgb(243, 230, 216);
+    --Stone150: rgb(228, 222, 216);
+    --Stone600: rgb(95, 87, 78);
+    --Stone900: rgb(48, 45, 44);
+    
+    --Brown800: rgb(133, 70, 50);
+    
+    --Rose800: rgb(123, 40, 79);
+    --Rose50: rgb(255, 245, 250);
+    --fontSize:16px;
+    /* --YoungSerif:YoungSerif; */
+    --YoungFWeight:400;
+    --Outfit400:400;
+    --Outfit600:600;
+    --Outfit800:800;
+
+}
+body{
+    font-family: Outfit;
+    font-weight: var(--Outfit400);
+    font-size: var(--fontSize);
+    color: var(--Stone600);
+}
+.top-image{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+.YoungSerif{
+    font-family:YoungSerif;
+    color: var(--Stone900);
+    /* font-weight: var(--YoungFWeight); */
+}
+.PinkBGDiv{
+ background-color: var(--Rose50);
+ padding: 1rem;
+ 
+}
+.PinkBGDiv h3{
+    color: var(--Rose800);
+}
+/* .PinkBGDiv ul{
+    display: grid;
+} */
+.PinkBGDiv ul li{
+    padding-bottom: 1rem;
+}
+/* takes last li element and applies a no-padding effect to it. */
+/* works by looking thru the list of children hence why we */
+/* selected 'li' not 'ul',the parent inorder to apply an effect to it */
+.PinkBGDiv ul li:nth-last-child(1){
+    padding-bottom: 0rem;
+}
+
+.Brown800{
+    color: var(--Brown800);
+}
+/* ol,ul{
+color: white;
+background: violet;
+} */
+ol li::marker,ul li::marker{
+    color: var(--Brown800);
+    /* background: aqua; */
+
+}
+ol li::marker{
+    font-weight: bold;
+}
+table{
+    /* display: flex; */
+    text-align: center;
+    
+}
+table tr{
+    /* display: flex; */
+    width: 100%;
+    border-top: thick solid black;
+    border-bottom: thick solid ;
+}
+
+.tableNutrition>*{
+border-top: thin solid var(--Stone150);
+/* border-bottom: thin solid var(--Stone150); */
+padding: 1rem;
+margin: 0rem;
+/* code below enables a flexible space b/n the items on each paragraph */
+/* of the webpage. remember: make the browser go the heavy lifting,since */
+/* it often makes layouts responsive and you might end up breaking */
+/* it apart */
+display: flex;
+justify-content: space-between;
+}
+
+.tableNutrition p:nth-child(1){
+    border-top: 0rem;
+}
+
+.bodyEdit{
+    /* display: flex; */
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* for large screens >500px */
+@media(min-width:500px){
+    body{
+        padding: 15%;
+        background-color: var(--Stone100);
+
+    }
+    .bodyEdit{
+        background-color: var(--White);
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+}
+/* for screens <500px */
+@media (max-width:500px) {
+    .top-image{
+        border-radius: 0rem;
+
+    }
+    body{
+        margin: 0rem;
+    }
+    .textBody{
+        padding: 1.5rem;
+    }
+}
