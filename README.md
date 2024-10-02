@@ -42,8 +42,8 @@ This is for Mobile Screens.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://kofi100.github.io/RecipePageHTML-Chall/)
+- Solution URL: [https://www.frontendmentor.io/solutions/a-responsive-recipe-webpage-K4XEhCmTN0](https://www.frontendmentor.io/solutions/a-responsive-recipe-webpage-K4XEhCmTN0)
+- Live Site URL: [https://kofi100.github.io/RecipePageHTML-Chall/](https://kofi100.github.io/RecipePageHTML-Chall/)
 
 ## My process
 
