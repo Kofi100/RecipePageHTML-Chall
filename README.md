@@ -43,7 +43,7 @@ This is for Mobile Screens.
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://kofi100.github.io/RecipePageHTML-Chall/)
 
 ## My process
 
